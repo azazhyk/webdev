@@ -1,0 +1,45 @@
+.container-fluid {
+  height: 100wh;
+  width: 100wh;
+  background-color: aqua;
+  padding: 0px;
+  align-items: flex-end;
+}
+.container-tp {
+  display: flex;
+  justify-content: space-between;
+}
+.container-cntr {
+  display: flex;
+  justify-content: center;
+}
+.container-btm {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sm {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+}
+.md {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+.lg {
+  background-color: green;
+  height: 300px;
+  width: 300px;
+}
+.xl {
+  background-color: yellow;
+  height: 400px;
+  width: 400px;
+}
+.xs {
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+}
