@@ -1,0 +1,92 @@
+body {
+  background-image: url("/img/background.png");
+}
+nav {
+  display: flex;
+  margin: 15px;
+  justify-content:space-between;
+  align-items: center;
+  box-sizing: content-box;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+#logo {
+  width: 15%;
+}
+#cart {
+  width: 5%;
+}
+.menu {
+  display: flex;
+  justify-content:space-between;
+}
+#cart {
+  width: 5%;
+  padding-right: 15px;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  float: left;
+  width: 3%;
+}
+aside img {
+  width: 80%;
+  padding-bottom: 15px;
+}
+.main-btn {
+  border: 0ch;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  color: white;
+  background-image:  linear-gradient(-90deg, #FF43BF 0%, rgba(102, 108, 255, 0.669413) 99.98%, rgba(193, 99, 250, 0.101042) 99.99%, rgba(127, 2, 253, 0) 100%);
+}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 10px;
+  
+}
+main {
+  display: flex;
+  justify-content:space-between;
+
+}
+figure {
+  float: right;
+  width: 45%;
+}
+#bg-img {
+  width: 100%;
+}
+section  {
+  padding-left: 80px;
+  margin-top: 100px;
+}
+.left-arrow {
+  background: none;
+  border: none;
+  margin-right: 15px;
+}
+.right-arrow {
+  background: none;
+  border: none;
+  width: 30px;
+  border-radius: 30px;
+  padding: 0;
+  margin-left: 15px;
+  background: linear-gradient(180deg, #FF43BF 0%, rgba(102, 108, 255, 0.669413) 99.98%, rgba(193, 99, 250, 0.101042) 99.99%, rgba(127, 2, 253, 0) 100%);
+}
+.buttons {
+  padding-left: 80px;
+}
