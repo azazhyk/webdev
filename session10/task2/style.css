@@ -1,0 +1,27 @@
+.container {
+  margin-top: 15px;
+}
+#result {
+  font-size: 36px;
+}
+.underweight {
+  color: blue;
+}
+.normal {
+  
+  color: green;
+}
+.overweight {
+  color: orange;
+}
+.obesity-class-1 {
+  color: rgb(166, 82, 22);
+}
+.obesity-class-2 {
+  
+  color: red;
+}
+.obesity-class-3 {
+
+  color:rgb(103, 0, 0);
+}
