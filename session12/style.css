@@ -1,9 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  
 }
 body {
   padding: 15px;
+  height: 100vh;
+  display: flex;
+  justify-items: center;
 }
 
 #welkome {
