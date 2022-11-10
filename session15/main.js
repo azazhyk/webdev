@@ -1,8 +1,8 @@
 let queue = [];
 let input = 0;
-let result = document.getElementById("answer").innerHTML;
 
 function calculate(value) {
+
     if (input !== 0) {
         input = parseFloat(input);
         addToQueue(input);
@@ -30,9 +30,9 @@ function calculate(value) {
     answer = parseFloat(answer);
     if(dividedByZero ===1){
         clearAll();
-        result = "ERROR";
+        document.getElementById("answer").innerHTML = "ERROR";
     } else {
-        result = answer;
+        document.getElementById("answer").innerHTML = answer;
         input = answer;
         queue = [];
     }
@@ -45,16 +45,17 @@ function addToQueue(input){
 function clearAll(){
     queue = [];
     input = 0;
-    result = "0";
+    document.getElementById("answer").innerHTML = "0";
 }
 
 function numericButton(arg){
-    if(result === "ERROR" || (result == "0" && arg != ".")){
-        result = "";
+
+    if(document.getElementById("answer").innerHTML === "ERROR" || (document.getElementById("answer").innerHTML == "0" && arg != ".")){
+        document.getElementById("answer").innerHTML = "";
     }
     if(!(arg === ".") || !input.match(/[.]/)){
         input += arg;
-        result += arg;
+        document.getElementById("answer").innerHTML += arg;
     }
 }
 
@@ -63,11 +64,11 @@ function operatorButton(arg){
         input = parseFloat(input);
         addToQueue(input);
         addToQueue(arg);
-        result +=arg;
+        document.getElementById("answer").innerHTML +=arg;
         input = 0;
     }
     if(arg == "-" && isNaN(queue[0]) && input !== "-"){
         input = "-";
-        result = "-";
+        document.getElementById("answer").innerHTML = "-";
     }
 }

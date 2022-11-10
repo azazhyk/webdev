@@ -10,7 +10,7 @@
 <body>
   <section>
     <div class="container">
-      <div id="answer"></div>
+      <div id="answer">0</div>
       <div class="buttons">
         <div class="button action" onclick="operatorButton('*')">*</div>
         <div class="button action" onclick="operatorButton('/')">/</div>
@@ -27,7 +27,7 @@
         <div class="button" onclick="numericButton('2')">2</div>
         <div class="button" onclick="numericButton('1')">1</div>
         <div class="button" onclick="numericButton('0')">0</div>
-        <div id="equal" class="button" onclick="calculateQueue(queue)" >=</div>
+        <div id="equal" class="button" onclick="calculate(queue)" >=</div>
         <div id="clear" class="button" onclick="clearAll()">C</div>
       </div>
     </div>
